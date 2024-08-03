@@ -1,0 +1,146 @@
+.container {
+    background: #E8C5E5;
+    opacity: 0.7;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vmin;
+    width: 50vmin;
+    padding: 15px;
+    border-radius: 3vmin;
+    position: relative;
+    left: 80vmin;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.text {
+    color: #522258;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.inputs {
+    margin-top: 23px;
+
+}
+
+.input {
+    margin-bottom: 11px;
+    outline: 0;
+    height: 35px;
+    width: 225px;
+    background: #BB9AB1;
+    border-radius: 6px;
+    margin-left: 40px;
+}
+
+.inputs input {
+    outline: 0;
+    background: transparent;
+    border: none;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.inputs img {
+    margin-left: 7px;
+    margin-top: 8px;
+    width: 11px;
+    height: 11px;
+}
+
+.forgot-password {
+    color: #522258;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.forgot-password span {
+    margin-left: 60px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14px;
+}
+
+.submit-container button {
+    color: #E8C5E5;
+    margin-top: 9px;
+    font-weight: 600;
+    width: 99px;
+    height: 34px;
+    background: #522258;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 70vmin;
+        left: 50vmin;
+    }
+
+    .input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90vmin;
+        left: 30vmin;
+    }
+
+    .input {
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vmin;
+        left: 0;
+        padding: 10px;
+    }
+
+    .header {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .forgot-password span {
+        margin-left: 0;
+    }
+
+    .submit-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submit-container button {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
